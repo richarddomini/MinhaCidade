@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            left: 50%;
+            top: 10%;
+        }
+
+        p.corda {
+            position: absolute;
+            font-size: 100px;
+            transform: rotate(270deg);
+
+            left: 48%;
+            top: -5%;
+        }
+
+        button {
+            display: inline;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <p>O <br> /|\ <br> /\</p>
+    </div>
+
+    <p class="corda">)</p>
+
+    <button id="pular">pular</button>
+
+    <script>
+        var a = document.querySelector("div")
+        
+        var ab = document.querySelector("div p")
+
+        var b1 = document.getElementById("pular")
+
+        var hr = document.querySelector("p.corda")
+    
+        var n = 1
+
+        b1.addEventListener("click", pular)
+
+        function pular() {
+           if (n == 1) {
+                a.style.top = "4%"
+                hr.style.transform = "rotate(90deg)"
+                hr.style.top = "0%"
+                hr.style.left = "50%"
+                n = 0
+           } else {
+                a.style.top = "10%"
+                hr.style.top = "-5%"
+                hr.style.transform = "rotate(270deg)"
+                hr.style.left = "48%"
+                hr.style.top = "-5%"
+                n = 1
+           }
+        }
+    </script> 
+</body>
+</html>
