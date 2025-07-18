@@ -35,6 +35,11 @@ h1 {
     color: rgb(139, 115, 84);
 }
 
+h1:hover {
+    text-decoration: underline;
+    color: rgb(99, 82, 60);
+}
+
 h2 {
     text-align: center;
     color: rgb(139, 115, 84);
