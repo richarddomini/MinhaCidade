@@ -113,7 +113,30 @@ div.aside {
 }
 
 footer {
+   color: rgb(139, 115, 84);
+
+   font-weight: bold;
+
+   font-size: 18px;
+
+   padding: 20px 0px;
+
+   text-align: center;
+
    
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(139, 115, 84);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1200px) {
